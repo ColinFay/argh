@@ -2,5 +2,5 @@
 ^README\.Rmd$
 ^LICENSE\.md$
 ^data-raw$
-^ouch\.Rproj$
+^argh\.Rproj$
 ^\.Rproj\.user$

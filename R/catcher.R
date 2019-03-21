@@ -1,25 +1,25 @@
-ouch <- new.env(parent = emptyenv())
+argh <- new.env(parent = emptyenv())
 
-#' Initialize ouch
+#' Initialize argh
 #'
 #' @param lang Language of the error to parse. Default
 #'     is english.
-#' @return an initialized session with ouch
+#' @return an initialized session with argh
 #' @export
 #' @rdname init
 #'
 #' @examples
-#' init_ouch()
+#' init_argh()
 
-init_ouch <- function(
+init_argh <- function(
   lang = c("en")
 ){
   lang <- match.arg(lang)
-  ouch$ouch <-   read.csv(
+  argh$argh <-   read.csv(
     stringsAsFactor = FALSE,
     system.file(
       paste0(lang, "_errors.csv"),
-      package = "ouch"
+      package = "argh"
     )
   )
   options("old_error" = getOption("error"))
@@ -32,20 +32,20 @@ init_ouch <- function(
 
 #' @export
 #' @rdname init
-stop_ouch <- function(){
+stop_argh <- function(){
   options("error" = getOption("old_error"))
 }
 
 friendly_error <- function(err, lang = "en"){
   w <- which(
     vapply(
-      ouch$ouch$error,
+      argh$argh$error,
       function(x) grepl(x, err),
       logical(1))
   )
   if (length(w) != 0){
-    cat("ouch...\n")
-    cat(ouch$ouch[w, 2], "\n")
+    cat("argh...\n")
+    cat(argh$argh[w, 2], "\n")
   }
 }
 
