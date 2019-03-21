@@ -8,3 +8,4 @@ attempt to use zero-length variable name,You might have tried to run the ``` fro
 attempt to apply non-function,You have tried to use an object which is not a function as a function.
 unexpected symbol in,You might have made a syntax error.
 cannot open file .* : No such file or directory,You might have tried a path that doesn't exist.
+Error in match.arg,You might have tried to use arguments which are not usable in this function.

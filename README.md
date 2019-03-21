@@ -11,7 +11,7 @@ messages.
 The messages returned by `{hemm}` try to explain what the error is.
 There is no guarantee they succeed.
 
-So far, there are 9 errors analysed.
+So far, there are 10 errors analysed.
 
 Also, please note that this package will override any other error
 handler running, until you call `stop_hemm()` (but I’m working on that).
