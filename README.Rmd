@@ -22,6 +22,8 @@ The messages returned by `{hemm}` try to explain what the error is. There is no 
 
 So far, there are `r nrow(read.csv("inst/en_errors.csv"))` errors analysed.
 
+Also, please note that this package will override any other error handler running, until you call `stop_hemm()` (but I'm working on that).
+
 
 ## Installation
 
