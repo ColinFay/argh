@@ -1,0 +1,10 @@
+error,message
+could not find function,You might have forgotten to load a package or have mispelled the function name.
+object of type 'closure' is not subsettable,You might have called `$` on a function.
+non-numeric argument to,You might have tried to use a character vector where a numeric is needed.
+there is no package called,You might have forgotten to install a package or have mispelled the package name
+object .* not found,The object you are looking for might not exist.
+attempt to use zero-length variable name,You might have tried to run the ``` from your Markdown chunk.
+attempt to apply non-function,You have tried to use an object which is not a function as a function.
+unexpected symbol in,You might have made a syntax error.
+cannot open file .* : No such file or directory,You might have tried a path that doesn't exist.

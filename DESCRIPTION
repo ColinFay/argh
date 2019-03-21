@@ -1,0 +1,13 @@
+Package: hemm
+Title: Hey, Everybody Makes Mistakes
+Version: 0.0.0.9000
+Authors@R: person('Colin', 'Fay', email = 'contact@colinfay.me', role = c('cre', 'aut'), comment = c(ORCID = '0000-0001-7343-1846'))
+Description: Hey, Everybody makes mistakes!
+License: MIT + file LICENSE
+LazyData: true
+URL: https://github.com/ColinFay/hemm
+BugReports: https://github.com/ColinFay/hemm/issues
+Encoding: UTF-8
+Suggests: 
+    testthat
+RoxygenNote: 6.1.0
