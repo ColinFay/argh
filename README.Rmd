@@ -45,26 +45,18 @@ Wait for an error to occure:
 Error: object 'iri' not found
 hemm...
 The object you are looking for might not exist. 
-
-> iri()
-Error in iri() : could not find function "iri"
+> library(dpylr)
+Error in library(dpylr) : there is no package called ‘dpylr’
 hemm...
-You might have forgotten to load a package or have mispelled the function name. 
-
-Error in mean$plop : object of type 'closure' is not subsettable
-hemm...
-You might have called `$` on a function. 
- 
+You might have forgotten to install a package or have mispelled the package name 
 > "a" + "b"
 Error in "a" + "b" : non-numeric argument to binary operator
 hemm...
 You might have tried to use a character vector where a numeric is needed. 
-
-> library(dlypr)
-Error in library(dlypr) : there is no package called ‘dlypr’
+> mean$Sepal.Length
+Error in mean$Sepal.Length : object of type 'closure' is not subsettable
 hemm...
-You might have forgotten to install a package or have mispelled the package name 
-
+You might have called `$` on a function.
 ...
 ```
 ## Stop `{hemm}`

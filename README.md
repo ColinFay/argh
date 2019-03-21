@@ -31,25 +31,23 @@ init_hemm()
 Wait for an error to occure:
 
 ``` r
-iri
+> iri
 Error: object 'iri' not found
 hemm...
 The object you are looking for might not exist. 
-
-iri()
-Error in iri() : could not find function "iri"
+> library(dpylr)
+Error in library(dpylr) : there is no package called ‘dpylr’
 hemm...
-You might have forgotten to load a package or have mispelled the function name.
-
-mean$plop
-Error in mean$plop : object of type 'closure' is not subsettable
-hemm...
-You might have tried to use a function where another kind of object is needed.
- 
-"a" + "b"
+You might have forgotten to install a package or have mispelled the package name 
+> "a" + "b"
 Error in "a" + "b" : non-numeric argument to binary operator
 hemm...
- You might have tried to pass a character where a numeric is needed.
+You might have tried to use a character vector where a numeric is needed. 
+> mean$Sepal.Length
+Error in mean$Sepal.Length : object of type 'closure' is not subsettable
+hemm...
+You might have called `$` on a function.
+...
 ```
 
 ## Stop `{hemm}`
