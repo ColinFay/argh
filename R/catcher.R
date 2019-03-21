@@ -1,25 +1,25 @@
-hemm <- new.env(parent = emptyenv())
+ouch <- new.env(parent = emptyenv())
 
-#' Initialize hemm
+#' Initialize ouch
 #'
 #' @param lang Language of the error to parse. Default
 #'     is english.
-#' @return an initialized session with hemm
+#' @return an initialized session with ouch
 #' @export
 #' @rdname init
 #'
 #' @examples
-#' init_hemm()
+#' init_ouch()
 
-init_hemm <- function(
+init_ouch <- function(
   lang = c("en")
 ){
   lang <- match.arg(lang)
-  hemm$hemm <-   read.csv(
+  ouch$ouch <-   read.csv(
     stringsAsFactor = FALSE,
     system.file(
       paste0(lang, "_errors.csv"),
-      package = "hemm"
+      package = "ouch"
     )
   )
   options("old_error" = getOption("error"))
@@ -32,20 +32,20 @@ init_hemm <- function(
 
 #' @export
 #' @rdname init
-stop_hemm <- function(){
+stop_ouch <- function(){
   options("error" = getOption("old_error"))
 }
 
 friendly_error <- function(err, lang = "en"){
   w <- which(
     vapply(
-      hemm$hemm$error,
+      ouch$ouch$error,
       function(x) grepl(x, err),
       logical(1))
   )
   if (length(w) != 0){
-    cat("hemm...\n")
-    cat(hemm$hemm[w, 2], "\n")
+    cat("ouch...\n")
+    cat(ouch$ouch[w, 2], "\n")
   }
 }
 
