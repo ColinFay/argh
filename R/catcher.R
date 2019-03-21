@@ -1,15 +1,9 @@
 hemm <- new.env(parent = emptyenv())
 
-hemm$hemm <-   read.csv(
-  stringsAsFactor = FALSE,
-  system.file(
-    paste0("en", "_errors.csv"),
-    package = "hemm"
-  )
-)
-
 #' Initialize hemm
 #'
+#' @param lang Language of the error to parse. Default
+#'     is english.
 #' @return an initialized session with hemm
 #' @export
 #' @rdname init
@@ -17,7 +11,17 @@ hemm$hemm <-   read.csv(
 #' @examples
 #' init_hemm()
 
-init_hemm <- function(){
+init_hemm <- function(
+  lang = c("en")
+){
+  lang <- match.arg(lang)
+  hemm$hemm <-   read.csv(
+    stringsAsFactor = FALSE,
+    system.file(
+      paste0(lang, "_errors.csv"),
+      package = "hemm"
+    )
+  )
   options("old_error" = getOption("error"))
   options( error = function(...){
     err <- geterrmessage()
