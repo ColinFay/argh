@@ -10,3 +10,4 @@ BugReports: https://github.com/ColinFay/argh/issues
 Encoding: UTF-8
 Suggests: 
     testthat
+RoxygenNote: 6.1.0

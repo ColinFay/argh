@@ -16,13 +16,13 @@ knitr::opts_chunk$set(
 
 The goal of `{argh}` is to (try) to provide advices on obscure R error messages. 
 
-## Disclaimer
+## Disclaimer and notes 
 
-The messages returned by `{argh}` try to explain what the error is. There is no guarantee they succeed. 
++ The messages returned by `{argh}` try to explain what the error is. There is no guarantee they succeed. 
 
-So far, there are `r nrow(read.csv("inst/en_errors.csv"))` errors analysed.
++ So far, there are `r nrow(read.csv("inst/en_errors.csv"))` errors analysed __for english__.
 
-Also, please note that this package will override any other error handler running, until you call `stop_argh()` (but I'm working on that).
++ Also, please note that this package will override any other error handler running, until you call `stop_argh()` (but I'm working on that).
 
 
 ## Installation
