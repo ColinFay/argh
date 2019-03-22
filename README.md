@@ -6,15 +6,19 @@
 The goal of `{argh}` is to (try) to provide advices on obscure R error
 messages.
 
-## Disclaimer
+## Disclaimer and notes
 
-The messages returned by `{argh}` try to explain what the error is.
-There is no guarantee they succeed.
+  - The messages returned by `{argh}` try to explain what the error is.
+    There is no guarantee they succeed.
 
-So far, there are 10 errors analysed.
+  - So far, there are 10 errors analysed **for english**.
 
-Also, please note that this package will override any other error
-handler running, until you call `stop_argh()` (but I’m working on that).
+  - So far it only works with English. But feel free to contribute with
+    your translation of [inst/en\_errors.csv](inst/en_errors.csv).
+
+  - Also, please note that this package will override any other error
+    handler running, until you call `stop_argh()` (but I’m working on
+    that).
 
 ## Installation
 
@@ -67,6 +71,8 @@ You can contribute by:
     csv of errors. On each line, the first element is a regex that
     catches the error, the other is a message (trying) to explain the
     error.
+
+  - add a translation of [inst/en\_errors.csv](inst/en_errors.csv).
 
 ## CoC
 
