@@ -22,6 +22,8 @@ The goal of `{argh}` is to (try) to provide advices on obscure R error messages.
 
 + So far, there are `r nrow(read.csv("inst/en_errors.csv"))` errors analysed __for english__.
 
++ So far it only works with English. But feel free to contribute with your translation of [inst/en_errors.csv](inst/en_errors.csv).
+
 + Also, please note that this package will override any other error handler running, until you call `stop_argh()` (but I'm working on that).
 
 
@@ -72,6 +74,8 @@ stop_argh()
 You can contribute by: 
 
 + adding examples into the [inst/en_errors.csv](inst/en_errors.csv) csv of errors. On each line, the first element is a regex that catches the error, the other is a message (trying) to explain the error.
+
++ add a translation of [inst/en_errors.csv](inst/en_errors.csv).
 
 ## CoC
 
