@@ -12,7 +12,7 @@ argh <- new.env(parent = emptyenv())
 #' init_argh()
 
 init_argh <- function(
-  lang = c("en")
+  lang = c("en", "fr")
 ){
   lang <- match.arg(lang)
   argh$argh <-   read.csv(

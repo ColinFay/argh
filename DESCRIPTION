@@ -2,11 +2,16 @@ Package: argh
 Title: Hey, Everybody Makes Mistakes
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "Colin",
-           family = "Fay",
-           role = c("cre", "aut"),
-           email = "contact@colinfay.me",
-           comment = structure("0000-0001-7343-1846", .Names = "ORCID"))
+    c(person(given = "Colin",
+             family = "Fay",
+             role = c("cre", "aut"),
+             email = "contact@colinfay.me",
+             comment = c(ORCID = "0000-0001-7343-1846")),
+      person(given = "Antoine",
+             family = "Bichat",
+             role = "ctb",
+             email = "a.bichat@yahoo.fr",
+             comment = c(ORCID = "0000-0001-6599-7081")))
 Description: Hey, Everybody makes mistakes!
 License: MIT + file LICENSE
 URL: https://github.com/ColinFay/argh
