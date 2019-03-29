@@ -11,7 +11,7 @@ stop_argh()
 }
 \arguments{
 \item{lang}{Language of the error to parse. Default
-is english. Now support "en", "fr", "ko".}
+is English. Now support "en", "fr", "ko".}
 }
 \value{
 an initialized session with argh
