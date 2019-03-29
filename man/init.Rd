@@ -5,13 +5,13 @@
 \alias{stop_argh}
 \title{Initialize argh}
 \usage{
-init_argh(lang = c("en", "ko"))
+init_argh(lang = c("en", "fr", "ko"))
 
 stop_argh()
 }
 \arguments{
 \item{lang}{Language of the error to parse. Default
-is english. Now support "en", "ko".}
+is english. Now support "en", "fr", "ko".}
 }
 \value{
 an initialized session with argh
