@@ -3,7 +3,7 @@
 
 # argh
 
-The goal of `{argh}` is to (try) to provide advices on obscure R error
+The goal of `{argh}` is to (try) to provide advice on obscure R error
 messages.
 
 ## Disclaimer and notes
@@ -11,10 +11,11 @@ messages.
   - The messages returned by `{argh}` try to explain what the error is.
     There is no guarantee they succeed.
 
-  - So far, there are 10 errors analysed **for english**.
+  - So far, there are 10 errors analyzed **for English**.
 
-  - So far it only works with English. But feel free to contribute with
-    your translation of [inst/en\_errors.csv](inst/en_errors.csv).
+  - So far it works with English, French and Korean. But feel free to
+    contribute with your translation of
+    [inst/en\_errors.csv](inst/en_errors.csv).
 
   - Also, please note that this package will override any other error
     handler running, until you call `stop_argh()` (but I’m working on
@@ -35,7 +36,7 @@ library(argh)
 init_argh()
 ```
 
-Wait for an error to occure:
+Wait for an error to occur:
 
 ``` r
 > iri

@@ -3,7 +3,7 @@ argh <- new.env(parent = emptyenv())
 #' Initialize argh
 #'
 #' @param lang Language of the error to parse. Default
-#'     is english. Now support "en", "ko".
+#'     is English. Now support "en", "fr", "ko".
 #' @return an initialized session with argh
 #' @export
 #' @importFrom utils read.csv
@@ -13,7 +13,7 @@ argh <- new.env(parent = emptyenv())
 #' init_argh()
 
 init_argh <- function(
-  lang = c("en", "ko")
+  lang = c("en", "fr", "ko")
 ){
   lang <- match.arg(lang)
   argh$argh <- read.csv(

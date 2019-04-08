@@ -1,0 +1,11 @@
+error,message
+Error in .* : impossible de trouver la fonction ".*",Vous avez probablement oublié de charger une librairie ou alors le nom de la fonction est mal orthographié.
+Error in .* : objet de type 'closure' non indiçable,Vous avez probablement utilisé `$` sur une fonction.
+Error in .* : argument non numérique pour un opérateur binaire,Vous avez probablement utilisé une chaîne de caractère là où un numérique est attendu.
+Error in .* : aucun package nommé ‘.*’ n'est trouvé,Vous avez probablement oublié d'installer cette librairie ou alors son nom est mal orthographié.
+Erreur : objet .* introuvable,L'objet que vous cherchez n'existe probablement pas.
+Erreur : tentative d'utilisation de nom de variable de longueur nulle,Vous avez probablement essayé d'exécuter les ``` de votre Markdown.
+Erreur : tentative d'appliquer un objet qui n'est pas une fonction,Vous avez probablement utilisé un objet qui n'est pas une fonction comme une fonction.
+Erreur : '.*' inattendu(e) in ".*",Vous avez probablement fait une faute de frappe.
+Error in .* : impossible d'ouvrir la connexion,Vous avez probablement utilisé un chemin qui n'existe pas.
+Error in match.arg,Vous avez probablement utilisé une valeur d'un argument qui n'était pas attendu pour cette fonction.
